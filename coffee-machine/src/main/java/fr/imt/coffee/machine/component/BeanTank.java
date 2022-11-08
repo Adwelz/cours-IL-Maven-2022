@@ -1,6 +1,6 @@
 package fr.imt.coffee.machine.component;
 
-import fr.imt.coffee.storage.cupboard.coffee.type.CoffeeType;
+import cupboard.coffee.type.CoffeeType;
 
 public class BeanTank extends Tank{
 

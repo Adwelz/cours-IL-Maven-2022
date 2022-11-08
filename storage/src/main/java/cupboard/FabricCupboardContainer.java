@@ -1,9 +1,9 @@
-package fr.imt.coffee.storage.cupboard;
+package cupboard;
 
-import fr.imt.coffee.storage.cupboard.container.Container;
-import fr.imt.coffee.storage.cupboard.container.Cup;
-import fr.imt.coffee.storage.cupboard.container.Mug;
-import fr.imt.coffee.storage.cupboard.exception.ExceptionContainerCreation;
+import cupboard.container.Container;
+import cupboard.container.Cup;
+import cupboard.container.Mug;
+import cupboard.exception.ExceptionContainerCreation;
 
 public class FabricCupboardContainer {
 

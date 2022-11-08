@@ -1,4 +1,4 @@
-package fr.imt.coffee.storage.cupboard.exception;
+package cupboard.exception;
 
 public class ExceptionContainerCreation extends Exception{
     public ExceptionContainerCreation(String message) {

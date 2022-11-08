@@ -1,4 +1,4 @@
-package fr.imt.coffee.storage.cupboard.container;
+package cupboard.container;
 
 public abstract class Container {
     private double capacity;

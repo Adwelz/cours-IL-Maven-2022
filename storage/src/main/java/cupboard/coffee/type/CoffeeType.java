@@ -1,4 +1,4 @@
-package fr.imt.coffee.storage.cupboard.coffee.type;
+package cupboard.coffee.type;
 
 /**
  * Énumération des types de café disponibles
