@@ -4,6 +4,7 @@ public class Tank {
     private final double maxVolume;
     private final double minVolume;
     private double actualVolume;
+    private Exception ExceptionTank;
 
     /**
      * Réservoir d'eau de la cafetière.
@@ -13,7 +14,7 @@ public class Tank {
      */
     public Tank(double initialVolume, double minVolume, double maxVolume){
         this.maxVolume = maxVolume;
-        this.minVolume = maxVolume;
+        this.minVolume = minVolume;
         this.actualVolume = initialVolume;
     }
 
@@ -22,7 +23,11 @@ public class Tank {
      * @param volumeToDecrease Volume de matière à enlever dans le réservoir
      */
     public void decreaseVolumeInTank(double volumeToDecrease){
-        this.actualVolume += volumeToDecrease;
+        double aV=this.getActualVolume();
+        if (aV-volumeToDecrease>this.getMinVolume()) {
+            this.actualVolume -= volumeToDecrease;
+        }
+        else this.actualVolume=this.minVolume;
     }
 
     /**
@@ -30,7 +35,11 @@ public class Tank {
      * @param volumeToIncrease Volume de matière à ajouter dans le réservoir
      */
     public void increaseVolumeInTank(double volumeToIncrease){
-        this.actualVolume += volumeToIncrease;
+        double aV=this.getActualVolume();
+        if (aV+volumeToIncrease<this.getMaxVolume()) {
+            this.actualVolume += volumeToIncrease;
+        }
+        else this.actualVolume=this.maxVolume;
     }
 
     public double getMaxVolume() {
